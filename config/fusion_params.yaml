@@ -1,0 +1,7 @@
+kamera_lidar_fuzyon_node:
+  ros__parameters:
+    camera_info_topic: "/camera/color/camera_info" 
+    bbox_topic: "/perception/stereo_detections"
+    lidar_topic: "/points_downsampled"
+    lidar_frame_id: "cloud" 
+    sync_queue_size: 15     
