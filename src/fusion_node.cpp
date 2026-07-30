@@ -47,7 +47,7 @@ FusionNode::FusionNode() : Node("kamera_lidar_fuzyon_node"), calib_hazir_(false)
     sync_ = std::make_shared<message_filters::Synchronizer<SyncPolicy>>(SyncPolicy(sync_queue), bbox_sub_, lidar_sub_);
     sync_->registerCallback(std::bind(&FusionNode::fuzyonislemi, this, std::placeholders::_1, std::placeholders::_2));
     
-    RCLCPP_INFO(this->get_logger(), "Evrensel LiCam Fusion Node'u Hazir. Lidar Frame: %s", lidar_frame_id_.c_str());
+    RCLCPP_INFO(this->get_logger(), "LiCam Fusion Node is Ready. Lidar Frame: %s", lidar_frame_id_.c_str());
 }
 
 void FusionNode::cameraInfoCallback(const sensor_msgs::msg::CameraInfo::SharedPtr msg) {
