@@ -2,7 +2,7 @@
 <package format="3">
   <name>licam_fusion</name>
   <version>0.0.1</version>
-  <description>DEOS Lidar-Camera Fusion Module</description>
+  <description>Lidar-Camera Fusion Module</description>
   <maintainer email="ardaefe.yilmaz@deu.edu.tr">Arda Efe Yilmaz</maintainer>
   <license>Apache-2.0</license>
 
