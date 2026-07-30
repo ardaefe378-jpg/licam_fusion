@@ -137,7 +137,7 @@ void FusionNode::fuzyonislemi(const vision_msgs::msg::Detection2DArray::ConstSha
         if (item.valid_depths.empty()) continue;
         std::sort(item.valid_depths.begin(), item.valid_depths.end());
         double final_depth = item.valid_depths[item.valid_depths.size() / 2];
-        RCLCPP_INFO(this->get_logger(), "Obje ID: %s | Uzerine Dusen Nokta: %zu | Mesafe: %.2f m", item.detection.id.c_str(), item.valid_depths.size(), final_depth);
+        RCLCPP_INFO(this->get_logger(), "Object ID: %s | Projection Points: %zu | Depth: %.2f m", item.detection.id.c_str(), item.valid_depths.size(), final_depth);
     }
 }
 
