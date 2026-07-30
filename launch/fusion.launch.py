@@ -28,7 +28,7 @@ def generate_launch_description():
 
     fusion_node = Node(
         package=package_name,
-        executable='fusion_node', # CMakeLists.txt içinde add_executable ile belirlediğin isim
+        executable='fusion_node',
         name='kamera_lidar_fuzyon_node',
         output='screen',
         parameters=[config_file]
